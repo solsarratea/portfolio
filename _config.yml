@@ -1,0 +1,21 @@
+# site
+title: solquemal
+baseurl: ""
+url: "http://portfolio.solquemal.com"
+favicon: "/assets/ico.png"
+g_analytics: UA-12345678-1
+
+# bio
+header: Portfolio
+desc: >
+   Gallery of <a href="https://solquemal.com/" target="_blank">Sol Sarratea</a>'s last work.
+
+# posts
+date_format: "%Y"
+
+# build settings
+markdown: kramdown
+# theme: louie
+exclude:
+  - Gemfile
+  - Gemfile.lock
