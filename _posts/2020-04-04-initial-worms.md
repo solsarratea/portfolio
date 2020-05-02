@@ -10,7 +10,7 @@ photos:
     gsc0-0: 'assets/reaction-diffusion-0/color1.png'
 videos: 
     gs1: 'assets/reaction-diffusion-0/azul-r.mkv'
-    gs0: 'assets/reaction-diffusion-0/blur-azul.mp4'
-    gs2: 'assets/reaction-diffusion-0/azul.mp4'
+    gs0: 'assets/reaction-diffusion-0/blur-azul.mkv'
+    gs2: 'assets/reaction-diffusion-0/azul.mkv'
 
 ---
