@@ -67,8 +67,7 @@ touch ${OUTPUT_FILE}
 
 echo "Created ${OUTPUT_FILE} in ${JEKYLL_POSTS_DIR}"
 
-echo -n "
----
+echo -n "---
 layout: post
 title: ${TITLE}
 detail: ${DETAIL}
@@ -85,7 +84,7 @@ photos:" >> ${OUTPUT_FILE}
 
     if [[ $extension =~ ^(jpg|jpeg|png|gif)$ ]];then
       echo -n "
-       "${TITLE}-${filename}": "assets/${FOLDER_NAME}/${f}"" >> ${OUTPUT_FILE}
+    "${TITLE}-${filename}": "assets/${FOLDER_NAME}/${f}"" >> ${OUTPUT_FILE}
     fi
 done
 fi
