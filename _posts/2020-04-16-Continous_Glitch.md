@@ -3,8 +3,6 @@ layout: post
 title: Continous Glitch
 detail: become rotten
 description: Create Three.js scene to interact with degrading images. Used shaders algorithms.
-photos:
-    Continous Glitch-ssample2: assets/continous-glitch/ssample2.png
 videos:
     Continous Glitch-cg1: assets/continous-glitch/cg1.mkv
     Continous Glitch-cg2: assets/continous-glitch/cg2.mkv
