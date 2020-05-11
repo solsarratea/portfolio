@@ -30,7 +30,7 @@ layout: default
   {% for vid in post.videos %}
   <div class="photos__img">
     <a href="#{{ vid[0] }}">
-      <video src="{{ vid[1] }}" alt="{{ vid[0] }}" />
+      <video type="video/mp4" src="{{ vid[1] }}" alt="{{ vid[0] }}" />
     </a>
     <a class="lightbox" id="{{ vid[0] }}" href="#_">
       <video muted controls src="{{ vid[1] }}" alt="{{ vid[0] }}" />
