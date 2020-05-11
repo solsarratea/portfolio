@@ -39,12 +39,12 @@ while [ -n "$1" ]; do
        shift
 
         ;;
-    -img)
+    --img)
         IMG=true;
 
         ;;
 
-    -vid)
+    --vid)
        VID=true;
 
        ;;
@@ -99,7 +99,7 @@ videos:" >> ${OUTPUT_FILE}
         f=$(echo "${file##*/}");
         extension=$(echo $f| cut  -d'.' -f 2); 
         filename=$(echo $f| cut  -d'.' -f 1);
-    echo $extension, $FOLDER_NAME
+   
     if [[ $extension =~ ^(mkv|mp4)$ ]];then
       echo -n "
     "${TITLE}-${filename}": "assets/${FOLDER_NAME}/${f}"" >> ${OUTPUT_FILE}
