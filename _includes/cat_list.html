@@ -1,0 +1,41 @@
+{% if site.categories %}
+  <ul class="rows">
+    <li class="row__cols">
+      <div class="row__title">
+        {% if site.category_title %}
+          {{ site.category_title }}
+        {% else %}
+          Category
+        {% endif %}
+      </div>
+
+      <div class="row__cat">
+        {% if site.category_cat %}
+          {{ site.category_cat }}
+        {% else %}
+          Year
+        {% endif %}
+      </div>
+    </li>
+    {% for category in site.categories reversed %}
+      <li class="row__category">
+        <a href="{{ site.url }}{{ category.url | relative_url }}">
+          <div class="row__title {% if include.uid == category.id %}row__active{% endif %}">
+            {{ category.title }}
+          </div>
+          {%if category.detail != 'all' %}
+          <div class="row__cat {% if include.uid == category.id %}row__active{% endif %}">
+            {{ category.date | date: "%Y"  }}
+            </div>
+           <div>{{ include.id }}</div>
+            {% else %}
+        {% endif %}
+        </a>
+        {% if category.img %}
+          <img class="row__img" src="{{ category.img }}" alt="{{ category.title }}">
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+

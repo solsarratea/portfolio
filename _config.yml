@@ -19,3 +19,7 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+  categories:
+      output: true

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+    <div class="container">
+       {% include header.html %}
+       <div>
+         {% include cat_list.html uid=page.id%}
+       </div>
+      <div class="post" style="display: inline-block;">
+        <div style="margin-top: 1.5em; font-weight: bold;">
+          Description
+        </div>
+        <div>
+          {{ page.description  }}
+        <div style="margin-top: 1.5em; font-weight: bold;">
+         
+        </div>
+          </div>
+        {% include gallery.html uid=page.id %}
+    </div>
+    <div>
+    </div>
+  </body>
+
+</html>
