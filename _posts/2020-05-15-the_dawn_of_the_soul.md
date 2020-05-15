@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the dawn of the soul
+title: The Dawn of the Soul
 detail: hydra
 description: Collaborative exploration with Dan Gorelick. Exploring Eric Satie,and reinaissance art in the world of code. Collision of dual worlds.
 videos:
