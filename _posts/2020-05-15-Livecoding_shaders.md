@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Livecoding shaders
-detail: glsl
-description: Forked version of The Force. Testing diffusion algorithm with webcam video capture
+detail: the force
+description:  Testing diffusion algorithm with webcam video capture
 videos:
     Livecoding shaders-fcinc: assets/force/fcinc.mp4
     Livecoding shaders-fcuat: assets/force/fcuat.mp4

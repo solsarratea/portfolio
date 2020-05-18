@@ -21,14 +21,17 @@
       <li class="row__category">
         <a href="{{ site.url }}{{ category.url | relative_url }}">
           <div class="row__title {% if include.uid == category.id %}row__active{% endif %}">
+            {% if  category.title == 'solquemal' %}
+            all
+            {% else %}
             {{ category.title }}
+            {% endif %}
           </div>
           {%if category.detail != 'all' %}
           <div class="row__cat {% if include.uid == category.id %}row__active{% endif %}">
             {{ category.date | date: "%Y"  }}
-            </div>
+          </div>
            <div>{{ include.id }}</div>
-            {% else %}
         {% endif %}
         </a>
         {% if category.img %}
